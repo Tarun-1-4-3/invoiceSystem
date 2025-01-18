@@ -18,6 +18,11 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
+    @GetMapping("/")
+    public ResponseEntity<String> serverStatus() {
+        return new ResponseEntity<>("Server is live!", HttpStatus.OK);
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<ProductOutputDto> getProduct(@PathVariable Long Barcode) {
         return new ResponseEntity<>(productService.getProduct(Barcode), HttpStatus.OK);
