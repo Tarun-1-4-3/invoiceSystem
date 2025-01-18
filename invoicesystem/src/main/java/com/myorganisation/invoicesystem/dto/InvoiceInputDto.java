@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class InvoiceInputDto {
-    private  Long barcode;
+    private  Long Barcode;
     private  String shop;
     private String customer;
     private Long quantity;

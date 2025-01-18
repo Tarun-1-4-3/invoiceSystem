@@ -23,7 +23,7 @@ public class ProductController {
         return new ResponseEntity<>("Server is live!", HttpStatus.OK);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{barcode}")
     public ResponseEntity<ProductOutputDto> getProduct(@PathVariable Long Barcode) {
         return new ResponseEntity<>(productService.getProduct(Barcode), HttpStatus.OK);
     }
