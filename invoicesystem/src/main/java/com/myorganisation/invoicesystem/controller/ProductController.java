@@ -18,7 +18,7 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
-    @GetMapping("/")
+    @GetMapping("/server")
     public ResponseEntity<String> serverStatus() {
         return new ResponseEntity<>("Server is live!", HttpStatus.OK);
     }

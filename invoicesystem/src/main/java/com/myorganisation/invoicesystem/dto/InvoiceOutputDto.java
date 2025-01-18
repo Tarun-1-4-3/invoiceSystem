@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.Date;
 @Data
 public class InvoiceOutputDto {
-    private  Long id;
+    private  Long barcode;
     private Date date;
     private  String shop;
     private String customer;
