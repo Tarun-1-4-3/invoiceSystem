@@ -34,8 +34,7 @@ public class InvoiceController {
 
     @PutMapping("/{id}")
     public ResponseEntity<InvoiceOutputDto> updateInvoice(@PathVariable Long barcode, @RequestBody InvoiceInputDto invoiceInputDto) {
-        return new ResponseEntity<>(invoiceService.updateProduct(barcode .
-                , invoiceInputDto), HttpStatus.OK);
+        return new ResponseEntity<>(invoiceService.updateProduct(barcode, invoiceInputDto), HttpStatus.OK);
     }
 
     @DeleteMapping("/{barcode}")
